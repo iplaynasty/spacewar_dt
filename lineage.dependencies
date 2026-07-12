@@ -4,7 +4,9 @@
     "target_path": "hardware/nothing"
   },
   {
-    "repository": "crdroidandroid/android_kernel_nothing_sm7325",
+    "repository" : "William24hmar/nothing_android_kernel_sm7325",
+    "remote"     : "github-non-los",
+    "branch"     : "ROM-16.4",
     "target_path": "kernel/nothing/sm7325"
   },
   {
