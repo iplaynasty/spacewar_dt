@@ -467,3 +467,7 @@ PRODUCT_PACKAGES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libwfdaac_vendor
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.build.tags=release-keys \
+    ro.build.keys=release-keys
