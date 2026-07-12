@@ -35,3 +35,26 @@ TARGET_ENABLE_BLUR := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+TARGET_CUSTOM_UDFPS := true
+
+WITH_GMS := true
+
+WITH_BCR := true
+
+$(call soong_config_set,surfaceflinger,frame_rate_category_high,120)
+$(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
+
+SURFACE_FLINGER_BOOST := true
+
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aosp/certs/releasekey
+
+# 2. Bluetooth mainline module SEPolicy signed with your keys (CRITICAL)
+PRODUCT_MAINLINE_BLUETOOTH_SEPOLICY_DEV_CERTIFICATES := $(dir $(PRODUCT_DEFAULT_DEV_CERTIFICATE))
+
+# 3. Recovery can verify OTA zips signed with your keys
+#PRODUCT_EXTRA_RECOVERY_KEYS := vendor/aosp/keys/releasekey
+
+# Lunaris flags
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
