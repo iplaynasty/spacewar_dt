@@ -4,9 +4,8 @@
     "target_path": "hardware/nothing"
   },
   {
-    "repository" : "William24hmar/nothing_android_kernel_sm7325",
-    "remote"     : "github-non-los",
-    "branch"     : "ROM-16.4",
+    "repository" : "Evolution-X-Devices/kernel_nothing_sm7325",
+    "branch"     : "bq2",
     "target_path": "kernel/nothing/sm7325"
   },
   {
