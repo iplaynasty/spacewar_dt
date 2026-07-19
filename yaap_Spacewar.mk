@@ -38,7 +38,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 TARGET_CUSTOM_UDFPS := true
 
-WITH_GMS := true
+WITH_GAPPS := true
 
 WITH_BCR := true
 
