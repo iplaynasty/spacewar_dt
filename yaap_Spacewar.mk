@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nothing/Spacewar/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_Spacewar
+PRODUCT_NAME := yaap_Spacewar
 PRODUCT_DEVICE := Spacewar
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A063
@@ -47,7 +47,7 @@ $(call soong_config_set,surfaceflinger,frame_rate_category_min,60)
 
 SURFACE_FLINGER_BOOST := true
 
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aosp/certs/releasekey
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/yaap/certs/releasekey
 
 # 2. Bluetooth mainline module SEPolicy signed with your keys (CRITICAL)
 PRODUCT_MAINLINE_BLUETOOTH_SEPOLICY_DEV_CERTIFICATES := $(dir $(PRODUCT_DEFAULT_DEV_CERTIFICATE))
