@@ -1,5 +1,6 @@
 [
   {
+    "remote": "github",
     "repository": "crdroidandroid/android_vendor_bcr",
     "target_path": "vendor/bcr"
   }
