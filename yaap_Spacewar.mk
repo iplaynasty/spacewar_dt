@@ -30,14 +30,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=Spacewar \
     BuildFingerprint="Nothing/Spacewar/Spacewar:15/AQ3A.240929.001/2604161140:user/release-keys"
 
-# Blur
-TARGET_ENABLE_BLUR := true
-
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-TARGET_CUSTOM_UDFPS := true
-
 PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/yaap/certs/releasekey
 
 # 2. Bluetooth mainline module SEPolicy signed with your keys (CRITICAL)
